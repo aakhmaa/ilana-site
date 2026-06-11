@@ -31,7 +31,7 @@ body {
     background: white;
     box-shadow: 0 2px 15px rgba(30, 58, 138, 0.08);
     z-index: 1000;
-    padding: 15px 0;
+    padding: 30px 0;
 }
 
 .header .container {
@@ -43,15 +43,15 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 150px;
 }
 
 .logo-img {
-    height: 70px;
+    height: 150px;
     width: auto;
     display: block;
     object-fit: contain;
-    max-width: 220px;
+    max-width: 480px;
 }
 
 .nav {
@@ -308,26 +308,29 @@ body {
     box-shadow: 0 15px 35px rgba(30, 58, 138, 0.2);
 }
 
-.product-image {
-    height: 200px;
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    border-radius: 12px 12px 0 0;
+.image-frame {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+    padding: 12px;
     border-bottom: 1px solid #e6eefc;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
 }
 
-/* Ensure any img inside product-card is constrained to the frame */
-.product-card img {
+.product-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     display: block;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
 }
 
 .product-card h3 {
     padding: 20px 20px 10px;
     font-size: 18px;
+    color: #1E3A8A;
 }
 
 .product-description {
@@ -716,6 +719,12 @@ body {
     .reviews h2,
     .contacts h2 {
         font-size: 28px;
+    }
+
+    /* smaller logo on tablet/mobile */
+    .logo-img {
+        height: 70px;
+        max-width: 260px;
     }
 
     .products-grid,
