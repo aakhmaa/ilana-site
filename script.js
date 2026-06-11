@@ -28,7 +28,6 @@ document.querySelectorAll('.product-card, .about-card, .review-card, .contact-it
 // ── Form submission ────────────────────────────────────────────────────────
 // ⚠️ Замените на URL вашего сервера после деплоя, например:
 // const BACKEND_URL = 'https://your-server.com/api/order';
-const BACKEND_URL = 'https://ilana-site.onrender.com';
 
 const form = document.getElementById('orderForm');
 const submitBtn = form?.querySelector('button[type="submit"]');
